@@ -4,9 +4,16 @@
   register: aws_public_dns
 
 - name: install nginx
-  apt: name=nginx state=present update_cache=yes
-  notify: restart nginx
- 
+  apt: 
+    name: nginx 
+    state: present
+    update_cache: yes
+
+- name: install nginx
+  copy:
+    src: the_cloud.jpg
+    dest: /usr/share/nginx/html/the_cloud.jpg
+  
 - name: set index.html
   template:
     src: index.html.j2
