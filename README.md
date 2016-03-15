@@ -30,28 +30,28 @@ NOTE:
 To reach the data to set the variables follow the below instructions,
 starting from your AWS console:
 * AWS_ACCESS_KEY and AWS_SECRET_KEY:
-1) Go to Security Credentials
-2) Create a new Access Key 
-3) Obtain the data at the fields: Access Key ID and Secret Access Key
+1. Go to Security Credentials
+2. Create a new Access Key 
+3. Obtain the data at the fields: Access Key ID and Secret Access Key
 
 * AWS_DEFAULT_REGION
-1) Go to Services
-2) EC2
-3) Select the region
+1. Go to Services
+2. EC2
+3. Select the region
 
 * AWS_PRIVATE_KEY_PATH and AWS_EC2_KEY_NAME
-1) Go to Services
-2) EC2
-3) Key Pairs
-4) Create Key Pairs
-5) Copy the file to the path
+1. Go to Services
+2. EC2
+3. Key Pairs
+4. Create Key Pairs
+5. Copy the file to the path
 
 * AWS_SECURITY_GROUP_NAME
-1) Go to Services
-2) EC2
-3) Security Groups 
-4) Create Security Group
-5) Add a inbound rule for HTTP and SSH from anywhere.
+1. Go to Services
+2. EC2
+3. Security Groups 
+4. Create Security Group
+5. Add a inbound rule for HTTP and SSH from anywhere.
 
 ### Usage
 After set the configuration listed above, just try the following line:
@@ -60,4 +60,4 @@ $ vagrant up --provider=aws
 ```
 
 
-Thank you for trying this environment and be free to contribute :)
+Thank you for trying this environment and be free to contribute :.
