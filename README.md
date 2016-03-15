@@ -27,6 +27,7 @@ $ export AWS_SECURITY_GROUP_NAME='vagrant'
 ```
 
 NOTE:
+You can set it into your ~/.profile or ~/.bashrc.
 To reach the data to set the variables follow the below instructions,
 starting from your AWS console:
 * AWS_ACCESS_KEY and AWS_SECRET_KEY:
@@ -58,6 +59,15 @@ After set the configuration listed above, just try the following line:
 ```
 $ vagrant up --provider=aws
 ```
+
+To access the command line of your EC2 VPC execute the following line:
+```
+$ vagrant ssh
+```
+
+To access the webserver from the browser, just use the AWS Public DNS
+generated for the EC2 VPC, it's dynamic.
+The http link will be printed at the end of the provision.
 
 
 Thank you for trying this environment and be free to contribute :.

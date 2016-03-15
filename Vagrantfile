@@ -47,7 +47,7 @@ HOSTS.each do | name, info |
       # Configuration for Ansible as Provisioner
       vm_name.vm.provision :ansible do |ansible|
         ansible.playbook          = 'playbook.yml'
-        ansible.verbose           = 'vv'
+        ansible.verbose           = 'v'
         ansible.host_key_checking = false
         ansible.limit             = 'all'
       end
