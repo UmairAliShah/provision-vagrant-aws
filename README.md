@@ -35,23 +35,23 @@ starting from your AWS console:
 3. Obtain the data at the fields: Access Key ID and Secret Access Key
 
 * AWS_DEFAULT_REGION
-..* Go to Services
-..* EC2
-..* Select the region
+⋅⋅* Go to Services
+⋅⋅* EC2
+⋅⋅* Select the region
 
 * AWS_PRIVATE_KEY_PATH and AWS_EC2_KEY_NAME
-..* Go to Services
-..* EC2
-..* Key Pairs
-..* Create Key Pairs
-..* Copy the file to the path
+⋅⋅* Go to Services
+⋅⋅* EC2
+⋅⋅* Key Pairs
+⋅⋅* Create Key Pairs
+⋅⋅* Copy the file to the path
 
 * AWS_SECURITY_GROUP_NAME
-..* Go to Services
-..* EC2
-..* Security Groups 
-..* Create Security Group
-..* Add a inbound rule for HTTP and SSH from anywhere.
+⋅⋅* Go to Services
+⋅⋅* EC2
+⋅⋅* Security Groups 
+⋅⋅* Create Security Group
+⋅⋅* Add a inbound rule for HTTP and SSH from anywhere.
 
 ### Usage
 After set the configuration listed above, just try the following line:
