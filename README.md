@@ -1,5 +1,5 @@
-Basic vagrant + ansile aws ec2 provision
-========================================
+Provision and configure a AWS EC2 instance with Vagrant and Ansible
+===================================================================
 
 
 This is repository contains all you need to provision a basic EC2 VM at AWS.
