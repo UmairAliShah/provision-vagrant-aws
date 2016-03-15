@@ -69,5 +69,10 @@ To access the webserver from the browser, just use the AWS Public DNS
 generated for the EC2 VPC, it's dynamic.
 The http link will be printed at the end of the provision.
 
+Never forget to destroy your EC2 instance after testing:
+```
+$ vagrant destroy
+```
+
 
 Thank you for trying this environment and be free to contribute :.
