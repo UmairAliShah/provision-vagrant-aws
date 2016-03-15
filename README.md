@@ -4,11 +4,11 @@ Basic vagrant + ansile aws ec2 provision
 
 This is repository contains all you need to provision a basic EC2 VM at AWS.
 
-## Initial requirements:
+## Required packages:
 * vagrant 1.6.5 or higher
 * ansible 2.0.0.2 or higher
 
-### Install the vagrant-aws plugin as shown below:
+## Install the vagrant-aws plugin:
 The vagrant-aws plugin can be installed executing the following:
 ```
 $ vagrant plugin install vagrant-aws
