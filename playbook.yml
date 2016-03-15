@@ -1,0 +1,7 @@
+---
+- name: setup nginx server 
+  hosts: webserver
+  user: vagrant
+  sudo: true
+  roles:
+    - nginx

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to the brand new AWS ec2 webserver!</title>
+<style>
+    body {
+        width: 55em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to the brand new AWS ec2 webserver!</h1>
+<p>
+The dynamic public DNS set by amazon is: {{ aws_public_dns.stdout }}
+</p>
+
+<p>
+For the source code of this provision please refer to: 
+<a href="https://github.com/rbprado/provision-vagrant-aws/">https://github.com/rbprado/provision-vagrant-aws/</a>.<br/>
+For more information about how to set up this environment please check the repository
+<a href="https://github.com/rbprado/provision-vagrant-aws/blob/master/README.md">README.md</a>.<br/>
+</p>
+
+<p><em>Thank you for trying this environment and be free to contribute :)</em></p>
+</body>
+</html>
