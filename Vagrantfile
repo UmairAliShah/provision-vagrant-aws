@@ -35,11 +35,14 @@ HOSTS.each do | name, info |
         aws.security_groups      = ENV['AWS_SECURITY_GROUP_NAME']
         aws.ami                  = info[:amazon_image]
         aws.instance_type        = info[:instance_type]
-        aws.block_device_mapping = [{ 'DeviceName' => '/dev/sda1', 'Ebs.VolumeSize' => info[:disk_size_gb] }]
+        aws.block_device_mapping = [{
+          'DeviceName'     => '/dev/sda1',
+          'Ebs.VolumeSize' => info[:disk_size_gb]
+          }]
         aws.tags = {
           'Name'        => name,
           'Environment' => 'vagrant-sandbox'
-          }  
+          }
         # Credentials to login to EC2 Instance
         override.ssh.username         = info[:shh_username]
         override.ssh.private_key_path = ENV['AWS_PRIVATE_KEY_PATH']
